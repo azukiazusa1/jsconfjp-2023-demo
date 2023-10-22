@@ -1,0 +1,25 @@
+<form>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      aria-describedby="email-error"
+    />
+  </div>
+
+  <p id="email-error">Invalid email address.</p>
+</form>
+
+<style>
+  #email-error {
+    display: none;
+    color: red;
+    font-size: 12px;
+  }
+
+  .form-group:has(:invalid) + #email-error {
+    display: block;
+  }
+</style>
