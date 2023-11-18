@@ -1,0 +1,67 @@
+<div>
+  <button invoketarget="my-modal">Display modal</button>
+
+  <dialog id="my-modal">
+    Hello, world!
+    <button invokeraction="close">Close</button>
+  </dialog>
+</div>
+
+<div>
+  <button invoketarget="my-detail">Show details</button>
+
+  <details id="my-detail">
+    <summary>Details</summary>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+      voluptatum, quibusdam, quia, quod voluptate voluptatem quos exercitationem
+      quas voluptatibus doloribus quae. Quisquam voluptatum, quibusdam, quia,
+      quod voluptate voluptatem quos exercitationem quas voluptatibus doloribus
+      quae.
+    </p>
+  </details>
+</div>
+
+<div>
+  <button invoketarget="my-file" invokeaction="showPicker">
+    Pick a file...
+  </button>
+
+  <input id="my-file" type="file" />
+</div>
+
+<div>
+  <button invoketarget="my-date" invokeaction="showPicker">
+    Pick a date...
+  </button>
+  <input id="my-date" type="date" />
+</div>
+
+<div>
+  <button invoketarget="my-video" invokeaction="play">Play</button>
+  <button invoketarget="my-video" invokeaction="pause">Pause</button>
+  <button invoketarget="my-video" invokeaction="requestFullscreen">
+    Fullscreen
+  </button>
+  <video
+    src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+    id="my-video"
+    width="320"
+    height="240"
+  ></video>
+</div>
+
+<style>
+  button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  div {
+    margin-bottom: 1rem;
+  }
+</style>
